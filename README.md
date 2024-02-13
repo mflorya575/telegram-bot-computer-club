@@ -1,3 +1,4 @@
-В виртуальном окружении используются библиотеки aiogram и asyncio.
+В виртуальном окружении используются библиотеки aiogram, asyncio, gspread.
 
-Если эти библиотеки не будут отображаться, используйте pip install aiogram, pip install asyncio
+Если эти библиотеки не будут отображаться, используйте pip install aiogram, pip install asyncio, pip install gspread
+
