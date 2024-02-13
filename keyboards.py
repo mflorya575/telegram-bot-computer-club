@@ -10,6 +10,7 @@ start_kb = ReplyKeyboardMarkup(
     ], resize_keyboard=True
 )
 
+
 games_kb = InlineKeyboardMarkup(
     inline_keyboard=[
         [
@@ -36,10 +37,31 @@ games_kb = InlineKeyboardMarkup(
     ]
 )
 
+
 buy_kb = InlineKeyboardMarkup(
     inline_keyboard=[
         [
             InlineKeyboardButton(text="🛍 Купить", url="https://t.me/jlosos1856"),
+        ],
+        [
+            InlineKeyboardButton(text="🔙 Назад", callback_data="price"),
+        ],
+    ]
+)
+
+
+# Инлайн клавиатура администратора
+admin_panel = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(text="👨‍👩‍👦‍👦 Пользователи", callback_data="users"),
+        ],
+        [
+            InlineKeyboardButton(text="📊 Статистика", callback_data="statistics"),
+        ],
+        [
+            InlineKeyboardButton(text="⛔️ Блокировка", callback_data="block_user"),
+            InlineKeyboardButton(text="✅ Разблокировка", callback_data="unlock_user"),
         ],
     ]
 )
