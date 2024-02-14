@@ -1,17 +1,19 @@
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram.types import ReplyKeyboardRemove, ReplyKeyboardMarkup, \
+    KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
+
 
 
 start_kb = ReplyKeyboardMarkup(
     keyboard=[
         [
-            KeyboardButton(text='📝 Цены'),
+            KeyboardButton(text='📝 Прейскурант'),
             KeyboardButton(text='ℹ️ О нас')
         ],
     ], resize_keyboard=True
 )
 
 
-games_kb = InlineKeyboardMarkup(
+catalog_kb = InlineKeyboardMarkup(
     inline_keyboard=[
         [
             InlineKeyboardButton(text='GTA 5', callback_data='GTA 5'),
@@ -44,24 +46,33 @@ buy_kb = InlineKeyboardMarkup(
             InlineKeyboardButton(text="🛍 Купить", url="https://t.me/jlosos1856"),
         ],
         [
-            InlineKeyboardButton(text="🔙 Назад", callback_data="price"),
+            InlineKeyboardButton(text="🔙 Назад", callback_data="back_to_preiskurant"),
         ],
     ]
 )
 
 
-# Инлайн клавиатура администратора
-admin_panel = InlineKeyboardMarkup(
+AdminPanel = InlineKeyboardMarkup(
     inline_keyboard=[
         [
-            InlineKeyboardButton(text="👨‍👩‍👦‍👦 Пользователи", callback_data="users"),
+            InlineKeyboardButton(text="👥 Пользователи", callback_data="users"),
         ],
         [
-            InlineKeyboardButton(text="📊 Статистика", callback_data="statistics"),
+            InlineKeyboardButton(text="📊 Статистика", callback_data="statistick"),
         ],
         [
-            InlineKeyboardButton(text="⛔️ Блокировка", callback_data="block_user"),
-            InlineKeyboardButton(text="✅ Разблокировка", callback_data="unlock_user"),
+            InlineKeyboardButton(text="✉️ Рассылка", callback_data="mailing"),
+        ],
+        [
+            InlineKeyboardButton(text="❌ Блокировка", callback_data="block"),
+        ],
+    ]
+)
+
+back_to_admin = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(text="🔙 Назад", callback_data="back_to_admin"),
         ],
     ]
 )
