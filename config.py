@@ -1,4 +1,4 @@
-API = '6114621044:AAEPdQjHaPYm3Q39L4KF7PEwvrRi9zTQLnU'
+API = 'Ваш токен'
 
 game_gta5_cost = 1500
 game_rdr2_cost = 1400
