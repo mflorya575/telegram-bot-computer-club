@@ -28,7 +28,7 @@ dp.callback_query_handler(lambda c: database.check_block(c.from_user.id))(handle
 dp.message_handler(commands=['start'])(handlers.Start.start)
 dp.message_handler(Text(equals=['ℹ️ О нас']))(handlers.Start.about_as)
 
-dp.message_handler(Text(equals=['📝 Прейскурант']))(handlers.Category.costs)
+dp.message_handler(Text(equals=['📝 Каталог']))(handlers.Category.costs)
 dp.callback_query_handler(text='GTA 5')(handlers.Category.gta5)
 dp.callback_query_handler(text='RDR 2')(handlers.Category.rdr2)
 dp.callback_query_handler(text='Sims 4')(handlers.Category.sims4)
@@ -51,4 +51,4 @@ dp.callback_query_handler(text="back_to_admin")(handlers.Admin.back_admin)
 
 
 if __name__ == '__main__':
-    executor.start_polling(dp, skip_updates = True)
+    executor.start_polling(dp, skip_updates=True)

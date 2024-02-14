@@ -6,7 +6,7 @@ from aiogram.types import ReplyKeyboardRemove, ReplyKeyboardMarkup, \
 start_kb = ReplyKeyboardMarkup(
     keyboard=[
         [
-            KeyboardButton(text='📝 Прейскурант'),
+            KeyboardButton(text='📝 Каталог'),
             KeyboardButton(text='ℹ️ О нас')
         ],
     ], resize_keyboard=True

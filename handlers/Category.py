@@ -6,7 +6,7 @@ from keyboards import *
 
 async def costs(message):
     with open('files/media/info.jpg', "rb") as img:
-        await message.answer_photo(img, '<b>Выберите интересующую вас услугу</b>',
+        await message.answer_photo(img, '<b>Выберите интересующую вас игру</b>',
                                    parse_mode='HTML', reply_markup=catalog_kb)
 
 
