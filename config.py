@@ -1,6 +1,3 @@
-import gspread
-
-
 API = '6114621044:AAEPdQjHaPYm3Q39L4KF7PEwvrRi9zTQLnU'
 
 game_gta5_cost = 1500
@@ -14,14 +11,3 @@ game_cyberpunk_cost = 1700
 game_roblox_cost = 700
 
 admins = [1176940081]
-
-
-#Подключаемся к таблице
-#Где config.file должно быть название файла
-# gc = gspread.service_account(filename='files/google-file-table.json')
-
-#Открываем таблицу
-# sh = gc.open("Тестовая таблица")
-
-#Выводим ячейку A1
-# print(sh.sheet1.get('A1'))
